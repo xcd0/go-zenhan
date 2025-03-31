@@ -30,7 +30,7 @@ release:
 update-binary:
 	@if ! which go >/dev/null 2>&1 ; then echo "goが見つかりません。wingetでGoのコンパイラをインストールします。"; winget install GoLang.Go; fi
 	@if ! [ -e "$(RESOURCE_DIR)" ]; then mkdir -p "$(RESOURCE_DIR)"; fi
-#	@if ! [ -e "$(RESOURCE_DIR)/src" ]; then mkdir -p "$(RESOURCE_DIR)/src"; fi
+	@if ! [ -e "$(RESOURCE_DIR)/src" ]; then mkdir -p "$(RESOURCE_DIR)/src"; fi
 #	@if ! [ -e "$(RESOURCE_DIR)/busybox64u.exe" ]; then make get-busybox; fi
 #	@if ! [ -e "$(RESOURCE_DIR)/upx.exe" ]; then make get-upx; fi
 #	@if ! [ -e "$(RESOURCE_DIR)/jq.exe" ]; then make get-jq; fi

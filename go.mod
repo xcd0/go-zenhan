@@ -1,4 +1,4 @@
-module go-zenhan
+module github.com/xcd0/go-zenhan
 
 go 1.24.0
 
