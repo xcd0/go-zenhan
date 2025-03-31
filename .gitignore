@@ -1,0 +1,5 @@
+resources
+bindata.go
+*.csv
+*.txt
+*.exe
